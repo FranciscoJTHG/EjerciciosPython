@@ -3,6 +3,7 @@ from restar import resta
 from multiplicar import producto
 from dividir import division
 
+# Función Principal
 def main():
     valor1 = int(input('Ingrese el primer valor: '))
     valor2 = int(input('Ingrese el segundo valor: '))
@@ -19,4 +20,4 @@ def main():
     div1 = division.Division(valor1, valor2)
     div1.result()
 
-main()
+main() 
