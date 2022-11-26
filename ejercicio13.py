@@ -39,5 +39,3 @@ class Aplicacion:
         self.label1.configure(text='')
 
 app = Aplicacion()
-
-AAAAC3NzaC1lZDI1NTE5AAAAIO24D8l+YHQOn2xEdb7HCz3LNOZDYQVmTibEFxktejme
