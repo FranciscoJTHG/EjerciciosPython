@@ -39,3 +39,7 @@ class Aplicacion:
         self.label1.configure(text='')
 
 app = Aplicacion()
+
+ode+HScbHpp8BTeVWWwN+BBq0wgva10GHpMD1U74gN8
+
+ssh-keygen -t ed25519 -C "franthielengaravito@gmail.com"
