@@ -40,6 +40,4 @@ class Aplicacion:
 
 app = Aplicacion()
 
-ode+HScbHpp8BTeVWWwN+BBq0wgva10GHpMD1U74gN8
-
-ssh-keygen -t ed25519 -C "franthielengaravito@gmail.com"
+AAAAC3NzaC1lZDI1NTE5AAAAIO24D8l+YHQOn2xEdb7HCz3LNOZDYQVmTibEFxktejme
