@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Pelicula</title>
+    <style>
+        .button {
+          background-color: #1c87c9;
+          border: none;
+          color: white;
+          padding: 10px 24px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 15px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+      </style>
+</head>
+<body>
+    {% block content %}
+    
+        <form class="empty-form" method="post">
+            {% csrf_token %}
+    
+    
+            {{ form.as_p }}
+    
+            <button class="button">Save</button>
+        </form>
+        <br>
+        {% if messages %}
+            {% for messages in message %}
+                <div class="alert-success" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    
+    {% endblock %}
+    
+</body>
+</html>

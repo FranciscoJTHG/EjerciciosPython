@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+    <style>
+        .button {
+          background-color: #1c87c9;
+          border: none;
+          color: white;
+          padding: 10px 24px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 15px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+      </style>
+</head>
+<body>
+    <h1>Mis Películas</h1> <a href="#"></a>
+    {% if lista_peliculas %}
+        <ul>
+            {% for pelicula in lista_peliculas %}
+                <li><a href="pelicula/{{pelicula.id}}">{{ pelicula.titulo }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No hay Películas disponibles</p>
+    {% endif %}
+
+    <li>
+
+        <a href="nuevaPelicula" class="button">Agregar Pelicula</a>
+    </li>
+    
+</body>
+</html>
