@@ -3,9 +3,11 @@ import tkinter as tk
 class Aplicacion:
     def __init__(self):
         self.vent1 = tk.Tk()
+        self.ven.title('Seleccionar')
 
         self.seleccion = tk.IntVar()
         self.seleccion.set(2)
+
 
         self.radio1 = tk.Radiobutton(self.vent1, text='Varon', variable=self.seleccion, value=1)
         self.radio1.grid(column=0, row=0)
